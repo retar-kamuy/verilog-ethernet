@@ -18,5 +18,7 @@ RUN dnf -y install clang \
     && dnf -y --enablerepo=crb install help2man \
     && dnf -y install gperftools-devel numactl \
     && dnf -y install zlib zlib-devel \
-    && dnf clean all
+    && dnf -y install python3-pip  \
+    && dnf clean all \
+    && pip install cpplint
 ENV PATH=${VERILATOR_ROOT}/bin:$PATH
