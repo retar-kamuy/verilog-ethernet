@@ -2,7 +2,8 @@
     "cpplint.cpplintPath": "/usr/local/bin/cpplint",
     "cpplint.lineLength": 80,
     "cpplint.filters": [
-        "-legal/copyright"
+        "-legal/copyright",
+        "-whitespace/line_length"
     ],
     "files.associations": {
         "ostream": "cpp",
